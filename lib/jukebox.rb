@@ -28,11 +28,9 @@ def list(songs)
     puts "#{index+1}. #{item}" }
 end 
 
-ef play(songs)
+def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.downcase.chomp 
-  
-  
   
   if (1..9).to_a.include?(user_response.to_i)
     puts "Playing #{songs[user_response.to_i - 1]}"
@@ -41,3 +39,4 @@ ef play(songs)
   else 
     puts "Invalid input, please try again"
   end 
+end 
