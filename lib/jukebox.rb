@@ -68,4 +68,4 @@ def run(songs)
   
     def exit_jukebox
   puts "Goodbye"
-end 
+
